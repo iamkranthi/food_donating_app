@@ -41,7 +41,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 color: ConstantColors.bgColor,
                 child: const OnBoardComponents(
                   title: 'What We DO',
-                  description: 'loreal paris',
+                  description: 'Erat nonumy no lorem diam ea, magna accusam vero invidunt kasd justo sit elitr, est diam at dolore et et.',
                   image: 'assets/onboarding/onbooard_3.png',
                 ),
               ),
@@ -49,12 +49,12 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                 color: ConstantColors.bgColor,
                 child: const OnBoardComponents(
                     title: 'title',
-                    description: 'description',
+                    description: 'Eirmod diam erat sadipscing sadipscing sed amet. Gubergren amet invidunt sea eirmod kasd dolor accusam duo et, diam dolor sit.',
                     image: 'assets/onboarding/onboard_2.png'),
               ),
             ],
           ),
-          OnBoradingButton(pageController: _pageController),
+       OnBoardingButton(lastPage: lastPage, pageController: _pageController),
         ],
       ),
     );
