@@ -32,6 +32,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               Container(
                 color: ConstantColors.bgColor,
                 child: const OnBoardComponents(
+                  color: Colors.transparent,
                   title: 'Main\tMotto',
                   description: 'Eat local Give local',
                   image: 'assets/onboarding/onboard_1.png',
@@ -40,6 +41,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               Container(
                 color: ConstantColors.bgColor,
                 child: const OnBoardComponents(
+                  color: Colors.transparent,
                   title: 'What We DO',
                   description: 'Erat nonumy no lorem diam ea, magna accusam vero invidunt kasd justo sit elitr, est diam at dolore et et.',
                   image: 'assets/onboarding/onbooard_3.png',
@@ -48,6 +50,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
               Container(
                 color: ConstantColors.bgColor,
                 child: const OnBoardComponents(
+                  color: Colors.transparent,
                     title: 'title',
                     description: 'Eirmod diam erat sadipscing sadipscing sed amet. Gubergren amet invidunt sea eirmod kasd dolor accusam duo et, diam dolor sit.',
                     image: 'assets/onboarding/onboard_2.png'),

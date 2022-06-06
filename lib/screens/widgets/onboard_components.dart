@@ -1,4 +1,3 @@
-import 'package:donate_app/constants/colors/constant_colors.dart';
 import 'package:donate_app/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -8,48 +7,45 @@ class OnBoardComponents extends StatelessWidget {
       {Key? key,
       required this.title,
       required this.description,
-      required this.image})
+      required this.image, required Color color})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: ConstantColors.bgColor,
-      child: Column(
-        children: [
-          const SizedBox(height: 180),
-          Image.asset(
-            image,
-            height: 350,
-            width: 400,
+    return Column(
+      children: [
+        const SizedBox(height: 180),
+        Image.asset(
+          image,
+          height: 350,
+          width: 400,
+        ),
+        const SizedBox(
+          height: 28,
+        ),
+        Text(
+          title,
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 32,
+            color: Colors.white,
           ),
-          const SizedBox(
-            height: 28,
-          ),
-          Text(
-            title,
+        ),
+        const SizedBox(
+          height: 12,
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Text(
+            description,
             style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 32,
+              fontWeight: FontWeight.w400,
+              fontSize: 18,
               color: Colors.white,
             ),
           ),
-          const SizedBox(
-            height: 12,
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            child: Text(
-              description,
-              style: const TextStyle(
-                fontWeight: FontWeight.w400,
-                fontSize: 18,
-                color: Colors.white,
-              ),
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
@@ -84,13 +80,8 @@ class OnBoardingButton extends StatelessWidget {
                 ),
                 child: GestureDetector(
                   onTap: () async {
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => const LoginScreen()));
-
-                    // Navigator.pushReplacement(
-                    //     context,
-                    //     MaterialPageRoute(
-                    //         builder: (context) => const LoginScreen()));
+                    Navigator.of(context).pushReplacement(
+                        MaterialPageRoute(builder: (context) =>  LoginScreen()));
                   },
                   child: Row(
                     children: const [
