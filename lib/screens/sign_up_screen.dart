@@ -51,13 +51,13 @@ class SignUpScreen extends StatelessWidget {
               onPressed: () {},
               child: const SizedBox(
                 width: 290,
-                height: 60,
+                height: 59,
                 child: Center(
                   child: Text(
                     'Sign Up',
                     style: TextStyle(
                       fontWeight: FontWeight.w600,
-                      fontSize: 22,
+                      fontSize: 20,
                     ),
                   ),
                 ),
